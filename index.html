@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Hello, here are NCS songs and music</h1>
+    <p>I like NCS songs and music, so I'm adding all the songs to this website.</p>
+    <h1>About Me</h1>
+    <p>Contact me: tokyintelligentgamer@gmail.com</p>
+
+    <div id="player"></div>
+    <div id="playlist-container">
+      <div class="video-item" onclick="playPlaylist('PLRBp0Fe2GpgmceFqltgvhlvVsfGNhCSlF')">Load Playlist</div>
+    </div>
+
+    <div id="player"></div>
+    <div id="playlist-container">
+      <div class="video-item" onclick="playPlaylist('PLRBp0Fe2Gpgn3XGmgwnA-hcOlIrtk-PHe')">Load Playlist</div>
+    </div>
+
+    <div id="player"></div>
+    <div id="playlist-container">
+      <div class="video-item" onclick="playPlaylist('PLRBp0Fe2GpglKIXdvLnzcnCdRwEr3tbkO')">Load Playlist</div>
+    </div>
+
+    <div id="player"></div>
+    <div id="playlist-container">
+      <div class="video-item" onclick="playPlaylist('PLRBp0Fe2GpgmmknJA4t9D-hTcPHuv1Yn5')">Load Playlist</div>
+    </div>
+
+    <div id="player"></div>
+    <div id="playlist-container">
+      <div class="video-item" onclick="playPlaylist('PLRBp0Fe2GpgnMixb9nPG9yBOGKpCWXtyH')">Load Playlist</div>
+    </div>
+
+    <script>
+        function playPlaylist(playlistId) {
+          var playerDiv = document.getElementById('player');
+          playerDiv.innerHTML = '<iframe width="100%" height="100%" src="https://www.youtube.com/embed/videoseries?list=' + playlistId + '&autoplay=1" frameborder="0" allowfullscreen></iframe>';
+        }
+    </script>
+</body>
+</html>
